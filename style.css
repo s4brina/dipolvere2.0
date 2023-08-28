@@ -1,0 +1,248 @@
+nav,
+li,
+ul,
+nav,
+a {
+    font-family: 'DejaVu Serif';
+    list-style-type: none;
+    font-size: 15px;
+    color: rgb(71, 71, 71);
+}
+
+@media screen and (max-width: 800px) {
+    a {
+        font-size: 20px;
+    }
+}
+
+h1 {
+    padding-top: 45px;
+    font-family: 'DejaVu Serif';
+    font-size: 65px;
+    font-weight: normal;
+    margin: 0;
+    letter-spacing: -3px;
+    line-height: 90%;
+}
+
+@media screen and (max-width: 800px) {
+    h1 {
+        font-size: 50px;
+    }
+}
+
+li {
+    padding-bottom: 20px;
+}
+
+a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-inline-start: 0px;
+    padding-top: 1em;
+}
+
+a:hover {
+    color: blue;
+}
+
+.hiddenimg {
+    display: none;
+    position: absolute;
+    pointer-events: none;
+}
+
+.hiddentxt a {
+    color: rgb(0, 0, 0);
+    opacity: 0.5;
+    text-decoration: none;
+    z-index: 99;
+}
+
+.hiddentxt a:hover {
+    opacity: 1;
+}
+
+
+.hiddenclick {
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.hiddenclick a {
+    text-decoration: none;
+}
+
+.hiddenclick a:visited {
+    text-decoration: none;
+
+}
+
+.hiddentxt:hover~.hiddenimg {
+    display: block;
+    position: absolute;
+    z-index: 2
+}
+
+.hiddenclickimg {
+    display: none;
+}
+
+.container2 {
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
+@media screen and (max-width: 800px) {
+    .container2 {
+        margin-left: 4%;
+        margin-top: 6%;
+    }
+}
+
+hr {
+    opacity: 80%;
+}
+
+.footer {
+    display: flex;
+    opacity: 50%;
+}
+
+img {
+    width: 200px;
+}
+
+.cinema {
+    background-color: black;
+}
+
+.categories {
+    flex-direction: column;
+}
+
+.article_container {
+    padding-top: 8em;
+    width: 50%;
+    padding-bottom: 10%;
+}
+
+.article,
+.footer {
+    font-size: 15px;
+    text-align: justify;
+    font-family: 'Times New Roman';
+    color: rgb(45, 45, 45);
+    line-height: 20px;
+
+}
+
+@media screen and (max-width: 800px) {
+    .article_container {
+        width: 80%;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    .article {
+        font-size: 17px;
+    }
+}
+
+html {
+    background-color: rgb(255, 255, 255);
+}
+
+.date {
+    opacity: 50%;
+    font-family: 'DejaVu Serif';
+    font-size: 12px;
+    margin: 0px;
+    margin-top: 15px;
+}
+
+.box {
+    margin-left: 100px;
+}
+
+@media screen and (max-width: 800px) {
+    .box {
+        margin-left: 0px;
+    }
+}
+
+.back_btn {
+    border: black;
+    font-size: 12px;
+    background-color: white;
+    cursor: pointer;
+
+}
+
+.back {
+    font-size: 13px;
+}
+
+.footer_box {
+}
+
+/* nav circle follow dot */
+
+ul li {
+    display: inline-block;
+    position: relative;
+}
+
+ul li:hover:after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    background: rgb(16, 16, 16);
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    left:calc(-20px - 0px);
+}
+
+
+.main-content {
+    flex: 1;
+    /* Add your main content styles here */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.grid {
+    display: flex;
+    flex-direction: row;
+}
+
+.item_2 {
+    padding-left: 250px;
+}
+
+@media screen and (max-width: 800px) {
+    .ddyymm {
+        font-size: 0px
+    }
+}
+
+.categories2 .ddyymm:hover:after {
+    width: 0px;
+}
+
+.ddyymm {
+    color: rgb(130, 130, 130);
+}
